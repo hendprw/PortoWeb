@@ -1,0 +1,149 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin-top: 1%;
+    background-color: rgba(255, 255, 255, 0.9); 
+    backdrop-filter: blur(5px);
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        padding-left: 7%;
+        padding-right: 0;
+        font-weight: 600;
+        text-align: center;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .container-sm {
+        padding-top: 5%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #h1 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 16px;
+        text-align: left;
+    }
+    .navbar-collapse {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar-brand {
+        padding-left: 8%;
+        padding-right: 5%;
+        font-weight: 600;
+        text-align: left;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .container-sm {
+        padding-top: 4%;
+    }
+    #h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 20px;
+        text-align: left;
+    }
+}
+
+a {
+    font-weight: bold;
+    color: #5183f5;
+    text-decoration: none;
+}
+.cta {
+position: relative;
+margin: auto;
+padding: 12px 18px;
+transition: all 0.2s ease;
+border: none;
+background: none;
+cursor: pointer;
+}
+
+.cta:before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+display: block;
+border-radius: 50px;
+background: #b1dae7;
+width: 45px;
+height: 45px;
+transition: all 0.3s ease;
+}
+
+.cta span {
+position: relative;
+font-family: "Ubuntu", sans-serif;
+font-size: 18px;
+font-weight: 700;
+letter-spacing: 0.05em;
+color: #234567;
+}
+
+.cta svg {
+position: relative;
+top: 0;
+margin-left: 10px;
+fill: none;
+stroke-linecap: round;
+stroke-linejoin: round;
+stroke: #234567;
+stroke-width: 2;
+transform: translateX(-5px);
+transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+width: 100%;
+background: #b1dae7;
+}
+
+.cta:hover svg {
+transform: translateX(0);
+}
+
+.cta:active {
+transform: scale(0.95);
+}
+
+#medium-posts h5 {
+margin-bottom: 15px;
+}
+
+.medium {
+color: rgba(0, 0, 0, .6);
+font-size: medium;
+font-weight: bold;
+}
+
+.medium:hover {
+color: black;
+background-color: rgba(14, 19, 19, 0.062);
+padding: 2.7px;
+}
+
+.navbar-toggler  {  border: none; border-radius: none; stroke: none; }
+
+.footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}

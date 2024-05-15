@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hendrik Personal Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="./style/uwu.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Hendprw</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/hendprw">Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/hendprwt">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-sm">
+        <div style="display: flex; align-items: center;">
+            <img alt="Hand" src="https://raw.githubusercontent.com/masnurrm/masnurrm/master/wave.gif" width='40'/>
+            <h2 style="margin-left: 10px; font-weight: bold; margin-bottom: 2%;">Hey! Hendrik Disini</h2>
+        </div>
+        <p>Hai! Selamat datang. Situs ini merupakan situs pribadi yang digunakan sebagai tempat untuk memuat informasi pribadi dan mengrasipkan berbagai karya-karya ataupun project yang pernah saya buat atau lakukan.</p>
+        <a href="/about" class="cta" style="margin-top: 1%; display: inline-block; text-decoration: none; color: inherit;">
+            <span>Tentangku</span>
+            <svg width="15px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+        </a>        
+
+              <section id="news">
+                <div class="container">
+                    <div style="display: flex; align-items: center; margin-top: 5%; margin-bottom: 2%;">
+                        <h2 style="margin-left: 10px; font-weight: bold;">📝 Tulisan Terbaru</h2>
+                    </div>
+                  <div class="row" id="medium-posts">
+                    <!-- Isi Berita Dari API -->
+                  </div>
+                </div>
+              </section>
+              <section>
+                  <div style="display: flex; align-items: center; margin-top: 3%; margin-bottom: 2%;">
+                    <h2 style="margin-left: 10px; font-weight: bold;">🥉 GitHub Analytics</h2>
+                </div>
+                <div class="github">
+                        <a href="https://github.com/hendprw">
+                          <img width="auto" height="90%" src="https://github-readme-stats-eight-theta.vercel.app/api?username=hendprw&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
+                        </a>
+                        </p>
+              </div>
+                </section>
+              
+              <section>
+              <div style="display: flex; align-items: center; margin-top: 3%; margin-bottom: 2%;">
+                <h2 style="margin-left: 10px; font-weight: bold;">⚙️ Teknologi Yang Aku Pakai</h2>
+            </div>
+            <div style="margin-bottom: 6%;">
+              <img src="https://img.shields.io/badge/-Python-05122A?style=flat&logo=python" alt="Python Badge">&nbsp;
+              <img src="https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript" alt="JavaScript Badge">&nbsp;
+              <img src="https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js" alt="Node.js Badge">&nbsp;
+              <img src="https://img.shields.io/badge/-Git-05122A?style=flat&logo=git" alt="Git Badge">&nbsp;
+              <img src="https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github" alt="GitHub Badge">&nbsp;
+              <img src="https://img.shields.io/badge/-Debian-c95534?style=flat&logo=debian" alt="Debian Badge">&nbsp;
+              <img src="https://img.shields.io/badge/-Kali%20Linux-cfcaa1?style=flat&logo=kali-linux" alt="Kali Linux Badge">&nbsp;
+              <img src="https://img.shields.io/badge/-Proxmox%20Virtual%20Environment-21211c?style=flat&logo=Proxmox" alt="Proxmox Badge">&nbsp;
+              <img src="https://img.shields.io/badge/-Mikrotik-21211c?style=flat&logo=Mikrotik" alt="Mikrotik Badge">&nbsp;
+              <img src="https://img.shields.io/badge/-Pihole-21211c?style=flat&logo=Pihole" alt="Pihole Badge">&nbsp;
+          </div>
+            </section>
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <font>Made With ❤ By <a href="https://instagram.com/hendprw">Hendprw</a></font>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/api.js"></script>
+</body>
+</html>
