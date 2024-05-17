@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
     margin: 0;
     padding: 0;
@@ -7,8 +7,9 @@ body {
 
 .navbar {
     margin-top: 1%;
-    background-color: rgba(255, 255, 255, 0.9); 
+    background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.021);
 }
 
 @media (max-width: 768px) {
@@ -66,80 +67,84 @@ a {
     text-decoration: none;
 }
 .cta {
-position: relative;
-margin: auto;
-padding: 12px 18px;
-transition: all 0.2s ease;
-border: none;
-background: none;
-cursor: pointer;
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 .cta:before {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-display: block;
-border-radius: 50px;
-background: #b1dae7;
-width: 45px;
-height: 45px;
-transition: all 0.3s ease;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
 }
 
 .cta span {
-position: relative;
-font-family: "Ubuntu", sans-serif;
-font-size: 18px;
-font-weight: 700;
-letter-spacing: 0.05em;
-color: #234567;
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
 }
 
 .cta svg {
-position: relative;
-top: 0;
-margin-left: 10px;
-fill: none;
-stroke-linecap: round;
-stroke-linejoin: round;
-stroke: #234567;
-stroke-width: 2;
-transform: translateX(-5px);
-transition: all 0.3s ease;
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
 }
 
 .cta:hover:before {
-width: 100%;
-background: #b1dae7;
+    width: 100%;
+    background: #b1dae7;
 }
 
 .cta:hover svg {
-transform: translateX(0);
+    transform: translateX(0);
 }
 
 .cta:active {
-transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 #medium-posts h5 {
-margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .medium {
-color: rgba(0, 0, 0, .6);
-font-size: medium;
-font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: medium;
+    font-weight: bold;
 }
 
 .medium:hover {
-color: black;
-background-color: rgba(14, 19, 19, 0.062);
-padding: 2.7px;
+    color: black;
+    background-color: rgba(14, 19, 19, 0.062);
+    padding: 2.7px;
 }
 
-.navbar-toggler  {  border: none; border-radius: none; stroke: none; }
+.navbar-toggler {
+    border: none;
+    border-radius: none;
+    stroke: none;
+}
 
 .footer {
     background-color: white;
@@ -147,3 +152,187 @@ padding: 2.7px;
     text-align: center;
     color: black;
 }
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-info h2,
+p {
+    margin-left: 3%;
+}
+
+.profile-info p {
+    font-size: medium;
+}
+
+.profile-info img {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+@media (max-width: 790px) {
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-info img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .profile-info h2,
+    .profile-info p {
+        margin-left: 0;
+        margin-top: 5;
+        text-align: center;
+    }
+
+    #news,
+    #github-analytics,
+    #technologies-title {
+        margin-top: 40px;
+    }
+
+    .cta {
+        margin-top: 30px;
+    }
+}
+
+.showp {
+    margin-top: 5%;
+    display: flex;
+    padding-bottom: 10%;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    align-items: center;
+}
+
+.showp h2 {
+    margin-top: 3%;
+    padding-top: 3%;
+    font-weight: 500;
+}
+
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5%;
+    width: 75%;
+}
+
+.project h4 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.project p {
+    margin: 0;
+    font-size: medium;
+}
+
+.showcer {
+    margin-top: 5%;
+    display: flex;
+    padding-bottom: 10%;
+    flex-direction: column;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.showcer h2 {
+    margin-top: 5%; 
+    margin-bottom: 5%;
+    font-weight: 500;
+    font-size: 1.5em; 
+}
+
+.cert {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1%;
+    width: 75%;
+}
+
+.cert h4 {
+    font-weight: bold;
+    margin-bottom: 0.3rem; 
+    font-size: 1.2em;
+    color: #5183f5;
+}
+
+.cert p {
+    margin: 0.1rem 0; 
+    font-size: 0.9em; 
+    color: #555555; 
+}
+
+
+
+.showex {
+    margin-top: 5%;
+    display: flex;
+    padding-bottom: 10%;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    align-items: center;
+}
+
+.showex h2 {
+    margin-top: 3%;
+    padding-top: 3%;
+    font-weight: 500;
+}
+
+.cert2 {
+    margin: 10px 0;
+    width: 80%;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cert2 .info {
+    width: 70%;
+}
+
+.cert2 h4 {
+    margin-bottom: 5px;
+}
+
+.cert2 p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.cert2 .position {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    background-color: rgb(215, 255, 224);
+    color: rgb(1, 140, 15);
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.logo {
+    max-width: 24px; 
+    margin-right: 5px; 
+    vertical-align: middle; 
+}
+

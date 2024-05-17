@@ -18,3 +18,7 @@ async function fetchMediumPosts() {
 fetchMediumPosts();
 
 
+document.addEventListener('contextmenu', function(e) {
+    alert("Apaan?")
+    e.preventDefault(); 
+});
